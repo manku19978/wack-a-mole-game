@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wack A Mole</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="heading">
+		<h1>WACK A MOLE</h1>
+	</div>
+
+	<div class='scorecard'>
+		<div id='score'>
+			<h2>SCORE</h2>
+			<div id='current-score'>0</div>   
+		</div>
+		<div class="time">	
+			<h2>Time Left</h2>
+			<div id="TL">0</div>
+		</div>
+		<div id='score'>
+			<h2>HIGH SCORE</h2>
+			<div id='high-score'>0</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="1" class="cell" onclick="score('1')"></div>
+		<div id="2" class="cell" onclick="score('2')"></div>
+		<div id="3" class="cell" onclick="score('3')"></div>
+		<div id="4" class="cell" onclick="score('4')"></div>
+		<div id="5" class="cell" onclick="score('5')"></div>
+		<div id="6" class="cell" onclick="score('6')"></div>
+		<div id="7" class="cell" onclick="score('7')"></div>
+		<div id="8" class="cell" onclick="score('8')"></div>
+		<div id="9" class="cell" onclick="score('9')"></div>
+	</div>
+
+	<div class="buttons-con">
+		<button id="btn" class="buttons" type="button" onclick="startBtn()">Start Game <span></span><span></span><span></span><span></span></button>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

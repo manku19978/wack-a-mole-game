@@ -1,0 +1,119 @@
+*{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	top: 0;
+	margin: 0;
+}
+body{
+	background-image: url('https://www.tynker.com/projects/images/3302094b06a0e9a4fdb28ada269564c4be1c23c0/background-scene---drawing.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	width: 30%;
+	margin: auto;
+}
+.cell{
+	margin-left: 25px;
+	font-size: 3rem;
+	text-align: center;
+	padding: 3rem;
+	border: 5px solid brown;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background-color: burlywood;
+	position: relative;
+}
+.heading{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 30px;
+}
+img{
+	position: absolute;
+	left: 20px;
+	height: 90px; 
+	width: auto;
+	top: 20px;
+}
+.scorecard{
+	margin: 5em;
+	display: flex;
+	justify-content: space-around;
+}
+.buttons-con{
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+}
+#current-score, #high-score, #TL{
+	width: 100px;
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+button {
+    --c: rgb(119, 108, 8);
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 20px;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+	margin: 1em;
+	padding-bottom: 50px;
+}
+
+button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+button:hover {
+    color: black;
+}
+
+button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+button span:nth-child(1) {
+    --n: 1;
+}
+
+button span:nth-child(2) {
+    --n: 2;
+}
+
+button span:nth-child(3) {
+    --n: 3;
+}
+
+button span:nth-child(4) {
+    --n: 4;
+}
